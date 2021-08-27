@@ -1,0 +1,121 @@
+MainLayout:
+	
+<MainLayout>:
+	rows: 3
+	TextInput:
+		id: textinput
+		text: root.text_to_display
+		halign: "right"
+		font_size: 100
+		multiline: False
+		size_hint: 1, None
+		height: "125dp"
+		disabled: True
+	GridLayout:
+		cols:4
+		rows:4
+		Button:
+			text: "1"
+			id: num1
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "2"
+			id: num2
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "3"
+			id: num3
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "C"
+			id: clear
+			font_size: 100 
+			on_press: root.clear_button(self)
+			size_hint: .2, .2
+			color: 0, 0, 1, 1
+		Button:
+			text: "4"
+			id: num4
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "5"
+			id: num5
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "6"
+			id: num6
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "+"
+			id: plus
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "7"
+			id: num7
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "8"
+			id: num8
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "9"
+			id: num9
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "-"
+			id: minus
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "×"
+			id: multiply
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "0"
+			id: num0
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "÷"
+			id: divide
+			font_size: 100 
+			on_press: root.normal_button(self)
+			size_hint: .2, .2
+		Button:
+			text: "="
+			id: equal
+			font_size: 100 
+			on_press: root.equal_button(self)
+			size_hint: .2, .2
+			color : 0, 1, 0, 1
+	Button:
+		text:"Exit"
+		font_size:30
+		on_press: quit()
+		color: 1, 0, 0, 1
+		size_hint: 1, None
+		height: "50dp"		
